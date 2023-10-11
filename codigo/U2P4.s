@@ -26,7 +26,7 @@ int main() {
     return 0;
 }*/
 
-@Codigo ensamblador:
+//Codigo ensamblador:
 
 	.arch armv6                @ Definir la arquitectura ARMv6
 	.eabi_attribute 28, 1     @ Atributos específicos del ABI (Application Binary Interface)
