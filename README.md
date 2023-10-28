@@ -55,6 +55,8 @@ Eduardo Alberto Garcia Pineda 20212407
 
 </pre>
 
+# PRACTICAS RASPBERRY Capitulo 2,3,4 resumen
+
 <pre>
 
 	<p align=left>
