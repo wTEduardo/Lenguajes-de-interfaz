@@ -34,7 +34,7 @@ Departamento de Sistemas y Computación
 Ingeniería en Sistemas Computacionales
 
 Semestre:
-Febrero - Junio 2022
+Agosto - Diciembre 2023
 
 Materia:
 Lenguajes de interfaz
@@ -46,7 +46,7 @@ Unidad:
 2
 
 Título del trabajo:
-Trabajos unidad 2
+Examen U2
 
 Estudiante:
 Eduardo Alberto Garcia Pineda 20212407
