@@ -50,5 +50,3 @@ Examen U2
 
 Estudiante:
 Eduardo Alberto Garcia Pineda 20212407
-
-aa
