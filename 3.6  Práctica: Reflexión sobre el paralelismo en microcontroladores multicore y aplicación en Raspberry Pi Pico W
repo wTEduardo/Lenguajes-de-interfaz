@@ -1,4 +1,50 @@
 Investigación:
-El paralelismo en sistemas de cómputo se refiere a la capacidad de realizar múltiples tareas de forma simultánea o en paralelo. En el contexto de microcontroladores multicore, como el dual core de Raspberry Pi Pico W, esto implica que el microcontrolador tiene dos núcleos de procesamiento independientes que pueden ejecutar instrucciones de manera simultánea, lo que puede aumentar significativamente el rendimiento y la eficiencia en aplicaciones específicas.
+El paralelismo en sistemas de cómputo se refiere a la capacidad de realizar múltiples tareas
+de forma simultánea o en paralelo. En el contexto de microcontroladores multicore, como el
+dual core de Raspberry Pi Pico W, esto implica que el microcontrolador tiene dos núcleos de
+procesamiento independientes que pueden ejecutar instrucciones de manera simultánea, lo
+que puede aumentar significativamente el rendimiento y la eficiencia en aplicaciones
+específicas.
 
-El dual core de Raspberry Pi Pico W es un microcontrolador que incluye dos núcleos ARM Cortex-M0+. Estos núcleos pueden funcionar de forma independiente y, cuando se aprovechan adecuadamente, permiten ejecutar tareas paralelas de manera eficiente. El usuario puede programar ambos núcleos para realizar distintas tareas o para compartir la carga de trabajo.
+El dual core de Raspberry Pi Pico W es un microcontrolador que incluye dos núcleos ARM
+Cortex-M0+. Estos núcleos pueden funcionar de forma independiente y, cuando se
+aprovechan adecuadamente, permiten ejecutar tareas paralelas de manera eficiente. El
+usuario puede programar ambos núcleos para realizar distintas tareas o para compartir la
+carga de trabajo.
+
+Análisis:
+Las características del dual core en Raspberry Pi Pico W permiten una mayor flexibilidad en el
+diseño de proyectos y la mejora del rendimiento en comparación con los microcontroladores
+de un solo núcleo. Al aprovechar ambos núcleos, es posible ejecutar tareas críticas en un
+núcleo y tareas secundarias en el otro, lo que puede llevar a una mayor eficiencia y capacidad
+de respuesta en proyectos más complejos.
+
+Selección del proyecto:
+Sistema de control de sensores y actuadores. Un proyecto de automatización en el hogar donde un
+núcleo se encargue de recopilar datos de sensores (como sensores de temperatura, humedad,
+movimiento, etc.) mientras que el otro núcleo gestiona el control de actuadores (como luces,
+motores, persianas, etc.). Esto permite una mayor capacidad de respuesta y un rendimiento más
+eficiente en comparación con un microcontrolador de un solo núcleo.
+
+Implementación del proyecto:
+La implementación de este proyecto implica programar ambos núcleos del Raspberry Pi Pico
+W de manera adecuada. Uno de los núcleos estará encargado de la adquisición y
+procesamiento de datos de los sensores, mientras que el otro se ocupará del control de los
+actuadores. Esto se puede lograr mediante la programación concurrente de los dos núcleos,
+donde cada uno realiza sus tareas de manera independiente pero coordinada.
+
+Análisis de resultados:
+Para evaluar cómo el uso del dual core mejora el rendimiento del proyecto, se pueden medir
+métricas como el tiempo de respuesta, la eficiencia energética y la capacidad de
+procesamiento. Comparar los resultados obtenidos con un solo núcleo frente a la
+implementación con ambos núcleos permitirá cuantificar los beneficios del paralelismo en el
+proyecto.
+
+Reflexión:
+El paralelismo es fundamental en sistemas de cómputo modernos, ya que permite abordar
+tareas de manera más eficiente y aprovechar al máximo los recursos disponibles. El dual core
+de Raspberry Pi Pico W ejemplifica cómo la tecnología de microcontroladores multicore
+facilita la implementación de proyectos más complejos y eficientes al distribuir la carga de
+trabajo entre los núcleos. Esto es especialmente relevante en aplicaciones donde la
+respuesta en tiempo real y el rendimiento son críticos. El paralelismo es una herramienta
+poderosa para maximizar el potencial de sistemas de cómputo como el Raspberry Pi Pico W.
