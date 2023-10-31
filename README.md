@@ -43,10 +43,10 @@ Docente:
 M.C. Rene Solis Reyes 
 
 Unidad:
-2
+3
 
 Título del trabajo:
-Examen U2
+Trabajos U3
 
 Estudiante:
 Eduardo Alberto Garcia Pineda 20212407
