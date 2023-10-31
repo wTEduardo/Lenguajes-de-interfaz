@@ -1,1 +1,4 @@
+Investigación:
+El paralelismo en sistemas de cómputo se refiere a la capacidad de realizar múltiples tareas de forma simultánea o en paralelo. En el contexto de microcontroladores multicore, como el dual core de Raspberry Pi Pico W, esto implica que el microcontrolador tiene dos núcleos de procesamiento independientes que pueden ejecutar instrucciones de manera simultánea, lo que puede aumentar significativamente el rendimiento y la eficiencia en aplicaciones específicas.
 
+El dual core de Raspberry Pi Pico W es un microcontrolador que incluye dos núcleos ARM Cortex-M0+. Estos núcleos pueden funcionar de forma independiente y, cuando se aprovechan adecuadamente, permiten ejecutar tareas paralelas de manera eficiente. El usuario puede programar ambos núcleos para realizar distintas tareas o para compartir la carga de trabajo.
