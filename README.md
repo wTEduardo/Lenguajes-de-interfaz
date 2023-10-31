@@ -51,12 +51,6 @@ Examen U2
 Estudiante:
 Eduardo Alberto Garcia Pineda 20212407
 
-	</p>
-
-</pre>
-
-# PRACTICAS RASPBERRY Capitulo 2,3,4 resumen
-
 <pre>
 
 	<p align=left>
