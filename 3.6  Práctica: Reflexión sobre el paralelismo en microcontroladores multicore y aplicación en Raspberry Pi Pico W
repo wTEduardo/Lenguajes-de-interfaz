@@ -48,3 +48,42 @@ facilita la implementación de proyectos más complejos y eficientes al distribu
 trabajo entre los núcleos. Esto es especialmente relevante en aplicaciones donde la
 respuesta en tiempo real y el rendimiento son críticos. El paralelismo es una herramienta
 poderosa para maximizar el potencial de sistemas de cómputo como el Raspberry Pi Pico W.
+
+Código fuente del proyecto implementado:
+#include "pico/stdlib.h"
+#include "pico/time.h"
+
+#define SENSOR_PIN 15  // Pin para el sensor de prueba
+#define ACTUATOR_PIN 16  // Pin para el actuador de prueba
+
+void sensor_task() {
+    gpio_init(SENSOR_PIN);
+    gpio_set_dir(SENSOR_PIN, GPIO_IN);
+
+    while (1) {
+        int sensor_data = gpio_get(SENSOR_PIN);
+        // Aquí puedes procesar los datos del sensor (por ejemplo, enviarlos por una red)
+        sleep_ms(1000);  // Simula la lectura del sensor cada segundo
+    }
+}
+
+void actuator_task() {
+    gpio_init(ACTUATOR_PIN);
+    gpio_set_dir(ACTUATOR_PIN, GPIO_OUT);
+
+    while (1) {
+        // Aquí puedes controlar el actuador (por ejemplo, encender/apagar una luz)
+        gpio_put(ACTUATOR_PIN, 1); // Enciende el actuador
+        sleep_ms(500);  // Actúa durante 0.5 segundos
+        gpio_put(ACTUATOR_PIN, 0); // Apaga el actuador
+        sleep_ms(500);  // Espera 0.5 segundos
+    }
+}
+
+int main() {
+    stdio_init_all();
+    multicore_launch_core1(actuator_task);
+    sensor_task();  // Ejecuta la tarea del sensor en el núcleo principal
+
+    return 0;
+}
